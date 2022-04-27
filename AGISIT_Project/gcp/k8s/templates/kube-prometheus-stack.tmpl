@@ -1,0 +1,29 @@
+grafana:
+  sidecar:
+    dashboards:
+      labelValue: 1
+      searchNamespace: "ALL"
+  adminPassword: ${grafana_adminPassword}
+  ingress:
+    enabled: true
+    annotations: {
+      kubernetes.io/ingress.class: "nginx",
+      ingress.kubernetes.io/rewrite-target: "/"
+    }
+    path: "/grafana"
+  grafana.ini:
+    server:
+      root_url: "%(protocol)s://%(domain)s:%(http_port)s/grafana"
+      serve_from_sub_path: true
+
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: ${storage_class_name}
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 1Gi
+    serviceMonitorSelectorNilUsesHelmValues: false
