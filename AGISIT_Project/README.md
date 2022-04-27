@@ -5,7 +5,6 @@ AGISIT 20201-2022
 Authors
 ============
 
-**Team 39A**
 
 | Number | Name              | Username                                       | Email										 |
 | -------|-------------------|------------------------------------------------| ---------------------------------------------|
@@ -14,6 +13,9 @@ Authors
 | 92510 | Lúcia Silva | [https://git.rnl.tecnico.ulisboa.pt/ist192510](https://git.rnl.tecnico.ulisboa.pt/ist192510) | [lucia.silva@tecnico.ulisboa.pt](mailto:lucia.silva@tecnico.ulisboa.pt) |
 
 
+Final Grade
+============
+20/20
 
 Project Overview
 ============
