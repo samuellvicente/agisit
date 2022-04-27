@@ -9,4 +9,4 @@ secondary_ip_ranges = {
   "services_ip_range" = "10.4.0.0/19"
 }
 registry         = "myrepo"
-grafana_password = "grafanamonitoring"
+grafana_password = ""
